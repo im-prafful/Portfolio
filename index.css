@@ -1,0 +1,557 @@
+body{
+    margin: 0;
+    font-family: 'Merriweather', sans-serif;
+}
+
+/* This section conatins the Name Description Icon and Image */
+.TopContainer{
+    margin: 0;
+    padding: 3rem;
+    height: 49rem;
+    background: var(--primary-color);
+}
+
+ /*This part is for the Search box, button, text and hover feature */
+.SearchBox{
+    margin: 0;
+    position: absolute;
+    top: 5rem;
+    left: 11rem;
+    transform: translate(-50%,-50%);
+    background: #2f3640;
+    height: 2.5rem;
+    border-radius: 2.5rem;
+    padding: 0.625rem;;
+}
+
+.SearchBox:hover > .Search-txt{
+    width: 12.5rem;
+    padding: 0 0.375rem;
+}
+
+.SearchBox:hover > .Search-btn{
+    background: white;
+}
+
+.Search-btn{
+    color: orangered;
+    float: right;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 2.5rem;
+    background: #2f3640;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+
+.Search-txt{
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: white;
+    font-size: 1rem;
+    transition: 0.4s;
+    line-height: 2.5rem;
+    width: 0;
+}
+
+/* This section contains the navigation bar that includes: Home Work About */
+.NavBar{
+    width: 100%;
+    background: var(--primary-color);
+    font-family: sans-serif;
+    font-size: 120%;
+}
+
+.NavBar ul{
+    list-style: none;
+    display: flex;
+}
+
+.NavBarList ul li{
+    position: relative;
+    left: 55rem;
+    display: flex;
+    list-style: none;
+    margin: 0.625rem 1.5625rem;
+}
+
+.NavBarList ul li a{
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+.NavBarList ul li a:hover{
+    color: orangered;
+}
+/* This section contain dark theme icon */
+#Icon{
+    position: absolute;
+    top: 4.2rem;
+    left: 81.5rem;
+    width: 2rem;
+    cursor: pointer;
+}
+
+:Root{
+    --primary-color: white ;
+    --secondary-color: #212121;
+}
+
+.Dark-Theme{
+    --primary-color: #000106;
+    --secondary-color: #fff;
+}
+
+/* This section contains Fixed Social Media Icon Tag */
+.SocialMediaTags{
+    background: var(--primary-color);
+    position: fixed;
+    top: 17.5rem;
+    right: 92.75rem;
+    width: 4.6875rem;
+    transition: all 0.3s linear;
+}
+
+.SMT-List{
+    margin: 0;
+}
+
+.SocialMediaTags li{
+    height: 2.5rem;
+    position: relative;
+    bottom: .0625rem;
+}
+
+.SocialMediaTags li a{
+    color: white;
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 1rem;
+    transition: all 0.3s linear;
+}
+
+.SocialMediaTags li:nth-child(1) a{
+    background: #2867B2;
+}
+
+.SocialMediaTags li:nth-child(2) a{
+    background: #333;
+}
+
+.SocialMediaTags li a i{
+    position: absolute;
+    top: 1rem;
+    left: 1.25rem;
+    font-size: 1.875rem;
+}
+
+.SMT-List li a span{
+    font-weight: bold;
+    letter-spacing: .0625rem;
+    text-transform: uppercase;
+    display: none;
+}
+
+.SocialMediaTags li a:hover{
+    width: 12.5rem;
+}
+
+.SMT-List li:hover a span{
+    display: block;
+    padding-left: 30%;
+}
+
+/* Left side of Top container which has name desp. and cv icon*/
+.Intro{
+    height: 46.875rem;
+    text-align: center;
+}
+
+.Name{
+    position: absolute;
+    top: 12.5rem;
+    left: 5%;
+    font-family: 'Sacramento', cursive;
+    font-size: 5.625rem;
+    margin-bottom: 1.25rem;
+    color: var(--secondary-color);
+}
+
+span{
+    color: orangered;
+}
+
+.Description{
+    position: absolute;
+    top: 25.625rem;
+    left: 5%;
+    color: var(--secondary-color);
+    line-height: 1.5625rem;
+    font-size: 1.1rem;
+    font-weight: normal;
+}
+
+.Resume{
+    margin: 1.875rem 0;
+    position: absolute;
+    top: 34.375rem;
+    left: 20%;
+    background: var(--secondary-color);
+    padding:0.625rem 1.125rem;
+    text-decoration: none;
+    color: var(--primary-color);
+    display: inline-block;
+    border-radius: 0.3125rem;
+}
+
+.ProfilePic{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 3.125rem;
+}
+
+.ProfilePic img{
+    height: 80%;
+    position: absolute;
+    left: 55%;
+    bottom: 10%;
+    border-radius: 30%;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+}
+
+.ProfilePic:hover .BgPattern{
+    bottom: 2.5rem;
+}
+
+.BgPattern:hover .MyPic{
+    top : 10%;
+}
+
+/* This section contains all the necessary details about me. */
+.MiddleSection{
+    padding: 2rem;
+    text-align: center;
+    background: var(--primary-color);
+    height : 150rem;
+    color: var(--secondary-color);
+}
+
+/* What can I Do for You */
+.CanDo{
+    position: relative;
+    left: 6rem;
+    height: 43%;
+    width: 85%;
+}
+
+.CanDo h1{
+    color: orangered;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.Design{
+    width: 70%;
+    margin: 8rem auto;
+    text-align: left;
+    line-height: 2;
+}
+
+.DesignImg{
+    position: relative;
+    bottom: 2.5rem;
+    width: 16rem;
+    height: 14rem;
+    border-radius: 50%;
+    float: left;
+    margin-right: 2rem;
+}
+
+.Develope{
+    position: relative;
+    top: 3rem;
+    width: 70%;
+    margin: 8rem auto;
+    text-align: left;
+    line-height: 2;
+}
+
+.DevelopeImg{
+    position: relative;
+    bottom: 3rem;
+    height: 14rem;
+    border-radius: 30%;
+    float: right;
+    margin-left: 2rem;
+}
+
+.Decode{
+    position: relative;
+    top: 8rem;
+    width: 70%;
+    margin: 8rem auto;
+    text-align: left;
+    line-height: 2;
+}
+
+.DecodeImg{
+    position: relative;
+    bottom: 3rem;
+    width: 16rem;
+    height: 14rem;
+    border-radius: 50%;
+    float: left;
+    margin-right: 2rem;
+}
+
+hr{
+    border: dotted orangered 6px;
+    border-bottom: none;
+    width: 7%;
+    margin: 8rem auto;
+}
+
+/* My Skills Section */
+.Skills{
+    position: relative;
+    left: 6rem;
+    height: 43%;
+    width: 85%;
+}
+
+.Heading{
+    color: orangered;
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 1rem;
+}
+
+.Heading:after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 0.25rem;
+    width: 6.25rem;
+    background-color: #2ecc71;
+}
+
+.Container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-gap: 1rem;
+    padding: 1rem 5rem;
+    font-size: 1.2rem;
+}
+
+.skill-box{
+    padding: 1rem;
+    color: #ddd;
+    cursor: pointer;
+}
+
+.skill-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.skill-title:after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    width: 2rem;
+    height: .25rem;
+    border-radius: 0 .125rem .125rem 0;
+    background-color: #2ecc71;
+}
+
+.skill-title:before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 2rem;
+    height: .25rem;
+    border-radius: 0 .125rem .125rem 0;
+    background-color: #2ecc71;
+}
+
+.skill-box:hover > .skill-title:after, .skill-box:hover > .skill-title::before{
+    width: 2rem;
+}
+
+.skill-box:hover .skill-img{
+    transform: translateY(-1rem);
+}
+
+.skill-title h3{
+    color: var(--secondary-color);
+    margin: 0.5rem;
+}
+
+.Skills img{
+    height : 6.25rem;
+    width: 6.25rem;
+    position: relative;
+    border-radius: 3rem;
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills-img:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 5.6rem;
+    background: rgba(100,100,100,0.5);
+    border-radius: 3rem;
+}
+
+.skill-logo{
+    width: 3rem;
+    z-index: 2;
+}
+
+/* This section contains the bottom part */
+footer{
+    width: 100%;
+    position: relative;
+    background: linear-gradient(to right, #ff4e00,#a40606);
+    color: #000106;
+    padding: 6.25rem 0 1.875rem;
+    font-size: 1rem;
+    line-height: 1.25rem;
+}
+
+.BottomSection{
+    height: 7rem;
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: flex;
+    justify-content: space-between;
+}
+
+.Col{
+    flex-basis: 25%;
+    padding: .625rem;
+}
+
+.Logo{
+    position: relative;
+    bottom: 5.35rem;
+    left: 3rem;
+    font-size: 5rem;
+    width: 8rem;
+    border-radius: 50%;
+    margin-bottom: 1.875rem;
+}
+
+.EndNote{
+    color: white;
+    position: relative;
+    bottom: 6.5rem;
+    right: 3rem;
+}
+
+.Col h3{
+    width: fit-content;
+    border-bottom: 2.5rem;
+    position: relative;
+    bottom: 4.5rem;
+    font-size: 1.35rem;
+}
+
+.Number{
+    color: white;
+    position: absolute;
+    bottom: 5.5rem;
+}
+
+.email{
+    color: white;
+    position: absolute;
+    bottom: 3.5rem;
+}
+
+form{
+    position: relative;
+    bottom: 2.5rem;
+    padding-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: .0625rem solid white;
+    margin-bottom: 3.125rem;
+}
+
+form .far{
+    font-size: 1rem;
+    margin-right: .625rem;
+}
+
+form input{
+    width: 100%;
+    background: transparent;
+    color: white;
+    border: 0;
+    outline: none;
+}
+
+form button{
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+form button .fas{
+    font-size: 1rem;
+    color: white;
+}
+
+.SocialIcon .fab{
+    color: #000106;
+    background: white;
+    cursor: pointer;
+}
+
+/* The Last section containing Copyright */
+
+#CopyRight{
+    margin: 0;
+    padding: 1rem;
+    height: 3rem;
+    background-color: #000106;
+}
+
+#CopyRight p{
+    text-align: center;
+    color: white;
+    font-size: 1rem;
+}
+
+#CopyRight span{
+    color:orangered;
+}

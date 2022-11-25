@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prafful Mishra</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="Favicon-MyPortfolio.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=League+Gothic&family=Merriweather&family=Montserrat:ital,wght@1,200&family=Sacramento&display=swap" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script src="https://kit.fontawesome.com/c4254e24a8.js"></script>
+  </head>
+
+  <body>
+
+    <!-- Social Media Tag Feature -->
+    <nav class="SocialMediaTags">
+      <ul class="SMT-List">
+
+        <li>
+          <a href="https://www.linkedin.com/in/prafful-mishra-9607b7209/" target="_blank">
+            <i class="fab fa-linkedin-in"></i>
+            <span>Linkedin</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="https://github.com/im-prafful" target="_blank">
+            <i class="fab fa-github"></i>
+            <span>Github</span>
+          </a>
+        </li>
+
+      </ul>
+    </nav>
+
+    <!-- The Top-most side of Web-Page having 700px -->
+    <div class="TopContainer">
+
+      <!-- The Search Bar Icon -->
+      <div class="SearchBox">
+        <input class="Search-txt" type="text" name="" placeholder="Type to search">
+        <a class="Search-btn" href="#">
+          <i class="fas fa-search"></i>
+        </a>
+      </div>
+      
+      <!-- The Navigation Bar -->
+      <div class="NavBar">
+        <nav class="NavBarList">
+          <ul>
+            <li><a href="#CanDo">Work</a></li>
+            <li><a href="#Skills">Skills</a></li>
+            <li><a href="About.html">About</a></li>
+            <img src="Images/moon.png" id="Icon">
+          </ul>
+        </nav>
+      </div>
+
+      <!-- For the Dark Theme -->
+      <script>
+        var Icon=document.getElementById("Icon");
+        Icon.onclick=function(){
+          document.body.classList.toggle("Dark-Theme");
+          if(document.body.classList.contains("Dark-Theme")){
+            Icon.src="Images/sun.png";
+          }
+          else{
+            Icon.src="Images/moon.png";
+          }
+        }
+      </script>
+
+      <!--  Left Side Content of Top Section -->
+      <div class="Intro">
+        <h1 class="Name">
+          <strong>
+            <em>
+              I'm <span>Prafful</span> Mishra
+            </em>
+          </strong>
+        </h1>
+        <p class="Description">
+          Welcome!... This is my official portfolio website to showcase all my works related
+          <br>
+          to Web Development, Machine learning, as well as my skills and other projects.
+        </p>
+        <a class="Resume" href="https://drive.google.com/file/d/1QaCXHhC94iX7bMs04nPQMUi5mQxBYgpl/view?usp=share_link" target="_blank">View Resume</a>
+      </div>
+
+      <!--  Right Side Content of Top Section -->
+      <div class="ProfilePic">
+        <img class="BgPattern" src="Images/Background.png">
+        <img class="MyPic" src="Images/HomePic.png">
+      </div>
+
+    </div>
+    
+    <div class="MiddleSection" style="margin: 0;">
+
+        <div id="CanDo" class="CanDo">
+
+            <h1>What I can Do</h2>
+
+            <div class="Design">
+
+              <img class="DesignImg" src="Images/DesignImg.png" alt="">
+              <h3>Design what you want</h3>
+              <p>
+                I like to keep it simple. My goals are to focus on typography, 
+                content and conveying the message that you want to send.
+              </p>
+
+            </div>
+
+            <div class="Develope">
+              
+              <img class="DevelopeImg" src="Images/DevImg.gif" alt="">
+              <h3>Develop what you need</h3>
+              <p>
+                I'm a developer, so I know how to create your website to run across 
+                devices using the latest technologies available.
+              </p>
+
+            </div>
+
+            <div class="Decode">
+              
+              <img class="DecodeImg" src="Images/Decode.jpg" alt="">
+              <h3>Decode your problems</h3>
+              <p>
+                I'm a problem solver, so coming up with most efficient and effective solution 
+                to tackle your mind baffling problem is what I love to do.
+              </p>
+
+            </div>
+
+        </div>
+
+          <hr>
+
+          <div id="Skills" class="Skills">
+
+            <div class="Heading">
+                <h1>My Skills</h1>
+            </div>
+
+            <div class="Container">
+
+                <div class="skill-box">
+
+                    <div class="skill-title">
+
+                        <div class="skill-img">
+                            <img src="Images/HTML5-Logo.png" class="skill-logo">
+                        </div>
+                    
+                        <h3>HTML 5</h3>
+                    </div>
+                        
+                    <p>
+                        abc
+                    </p>
+                </div>
+
+                <div class="skill-box">
+
+                    <div class="skill-title">
+
+                        <div class="skill-img">
+                            <img src="Images/CSS3-Logo.png" class="skill-logo">
+                        </div>
+                    
+                        <h3>CSS 3</h3>
+                    </div>
+                        
+                    <p>
+                        abc
+                    </p>
+                </div>
+                
+                <div class="skill-box">
+
+                    <div class="skill-title">
+
+                        <div class="skill-img">
+                            <img src="Images/JavaScript-Logo.png" class="skill-logo">
+                        </div>
+                    
+                        <h3>JavaScript</h3>
+                    </div>
+                        
+                    <p>
+                        abc
+                    </p>
+                </div>
+
+                <div class="skill-box">
+
+                    <div class="skill-title">
+
+                        <div class="skill-img">
+                            <img src="Images/Python-Logo.png" class="skill-logo">
+                        </div>
+                    
+                        <h3>Python</h3>
+                    </div>
+                        
+                    <p>
+                        abc
+                    </p>
+                </div>
+
+                <div class="skill-box">
+
+                    <div class="skill-title">
+
+                        <div class="skill-img">
+                            <img src="Images/NodeJs-Logo.png" class="skill-logo">
+                        </div>
+                    
+                        <h3>Node Js</h3>
+                    </div>
+                        
+                    <p>
+                        abc
+                    </p>
+                </div>
+
+                <div class="skill-box">
+
+                    <div class="skill-title">
+
+                        <div class="skill-img">
+                            <img src="Images/Flutter-Logo.png" class="skill-logo">
+                        </div>
+                    
+                        <h3>Flutter</h3>
+                    </div>
+                        
+                    <p>
+                        abc
+                    </p>
+                </div>
+                    
+            </div>
+
+          </div>
+
+    </div>
+
+    <footer>
+
+      <div class="BottomSection">
+
+        <div class="Col">
+
+          <img class="Logo" src="Images/PM_Logo.jpg">
+          <p class="EndNote">
+            <em>
+              "Its not good-bye, Its see-you later!..."
+              <br>
+              Thank You for precious time, I hope you liked my website.
+            </em>
+          </p>
+
+        </div>
+
+        <div class="Col">
+
+          <h3>Contact Details</h3>
+          <p class="Number">+91-8969729975</p>
+          <p class="email">imprafful26@gmail.com</p>
+        
+        </div>
+
+        <div class="Col">
+
+          <h3> Newsletter </h3>
+          <form>
+            <i class="far fa-envelope"></i>
+            <input type="email" placeholder="Enter your email id" required>
+            <button type="submit">
+              <i class="fas fa-arrow-right"></i>
+            </button>
+          </form>
+
+        </div>
+
+        <div class="SocialIcon">
+
+          <ul>
+
+            <li>
+              <a href="https://www.facebook.com/praffulmishra01" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.instagram.com/itsprafful/" target="_blank">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+
+            <li>
+              <a href="" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+
+    </footer>
+
+    <div id="CopyRight">
+
+      <p> <span> Prafful Mishra </span><strong>©</strong> 2022 - All Rights Reserved </p>
+
+    </div>
+
+  </body>
+
+</html>

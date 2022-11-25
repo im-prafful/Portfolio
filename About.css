@@ -1,0 +1,181 @@
+:root{
+    --yellow: #FFA500;
+}
+
+*{
+    font-family: 'Merriweather','Nunito', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none; border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+*::selection{
+    background: var(--yellow);
+    color: #333;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+html::-webkit-scrollbar{
+    width: 1.4rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: #222;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: var(--yellow);
+}
+
+body{
+    background: #111;
+    overflow-x: hidden;
+    padding-left: 35rem;
+}
+
+.btn{
+    position: relative;
+    left: 90rem;
+    padding: .7rem 3rem;
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 3rem;
+    font-size: 2rem;
+    border-radius: 5rem;
+}
+
+.btn i{
+    padding: 0 .5rem;
+    font-size: 1.8rem;
+}
+
+.btn:hover{
+    background: var(--yellow);
+}
+
+.heading span{
+    color: var(--yellow);
+}
+
+header{
+    position: fixed;
+    top: 0; left: 0;
+    z-index: 1000;
+    height: 100%;
+    width: 45rem;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    text-align: center;
+}
+
+.Bio img{
+    height: 20rem;
+    width: 20rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border: .7rem solid var(--yellow);
+}
+
+.Bio .Name{
+    font-size: 4rem;
+    color:#fff;
+}
+
+.Bio .Name span{
+    color: var(--yellow);
+}
+
+.Bio .Post{
+    margin-top: .8rem;
+    font-size: 2.5rem;
+    color:#fff;
+}
+
+.Bio .Post span{
+    padding: 1rem;
+    color: var(--yellow);
+}
+
+.Bio .Description{
+    margin-top: 5rem;
+    padding: 0 1rem;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+#About .Heading{
+    text-align: center;
+    color: #fff;
+    margin: 1rem 0;
+    font-size: 4rem;
+    padding: 2rem;
+    border-bottom: .2rem solid #fff4;
+}
+
+#About .Heading span{
+    padding: 1rem;
+    color: var(--yellow);
+}
+
+#About .Row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: .5rem;
+}
+
+#About .Row .Info{
+    flex: 1rem 1rem 48rem;
+    padding: 2rem 1rem;
+    padding-left: 6rem;
+}
+
+#About .Row .Info h3{
+    font-size: 2rem;
+    color: #fff;
+    padding: 1rem 0;
+    font-weight: normal;
+}
+
+#About .Row .Info span{
+    padding: 0 1.5rem;
+    color: var(--yellow);
+}
+
+#About .Row .Counter{
+    flex: 1rem 1rem 48rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#About .Row .Counter .Box{
+    width: 20rem;
+    background: #222;
+    text-align: center;
+    padding: 2rem;
+    margin: 2rem;
+}
+
+#About .Row .Counter .Box span{
+    font-size: 4rem;
+    color: var(--yellow);
+}
+
+#About .Row .Counter .Box h3{
+    font-size: 2rem;
+    color: #fff;
+}
